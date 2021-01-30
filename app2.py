@@ -9,7 +9,7 @@ regressor = pickle.load(open(filename, 'rb'))
 
 app = Flask(__name__,template_folder='template')
 
-@app.route('/home')
+@app.route('/')
 def home():
     return render_template('index.html')
 
